@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Determination';
+    src: url(res/10895.otf);
+}
+
+@font-face {
+    font-family: 'UndertaleBack';
+    src: url(res/MonsterFriendBack.otf);
+}
+
+@font-face {
+    font-family: 'UndertaleFore';
+    src: url(res/MonsterFriendFore.otf);
+}
+
+body {
+    background: linear-gradient(to bottom, #000 65%, #110000 85%, #350000);
+    color: white;
+    font-family: 'Determination';
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form fieldset {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #fff;
+    background: #000;
+}
+
+.title-back {
+    font-family: 'UndertaleBack';
+    font-weight: normal;
+    color: #999;
+    position: absolute;
+    top: 93px;
+    left: 102px;
+}
+
+.title-fore {
+    font-family: 'UndertaleFore';
+    font-weight: normal;
+    color: #fff;
+    position: absolute;
+    top: 93px;
+    left: 102px;
+}
+
+.title-heart {
+    font-family: 'UndertaleFore';
+    font-weight: normal;
+    color: #f00;
+    position: absolute;
+    top: 93px;
+    left: 160px;
+}
+
+h2 {
+font-family: 'Determination';
+font-weight: normal;
+}
+
+.button {
+    background-color: #000;
+    border-width: 3px;
+    border-color: #f87539;
+    color: #f87539;
+    font-family: 'Determination';
+}
+
+.button:hover {
+    border-color: #ff0;
+    color: #ff0;
+}
+
+.button:disabled {
+    border-color: #c76335;
+    color: #c76335;
+}
+
+.button:active {
+    border-color: #ff0;
+    color: #ff0;
+}
+
+input[type=text] {
+    background: #fff;
+    color: #000;
+    font-family: 'Determination';
+}
+
+input[type=checkbox] {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #fff;
+    background: #000;
+}
+
+.selectbox {
+    background: #fff;
+    color: #000;
+    font-family: 'Determination';
+}
+
+a {
+    color: #fff;
+}
+
+a:hover {
+    color: #ff0;
+}
+
+a:active {
+    color: #ff0;
+}
+
+a:after {
+    color: #fff;
+}

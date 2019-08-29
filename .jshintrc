@@ -1,0 +1,12 @@
+{
+    "strict": true,
+    "eqeqeq": true,
+    "undef": true,
+    "unused": true,
+    "browser": true,
+    "shadow": "outer",
+    "globals": {
+        "saveAs": false,
+        "presets": true
+    }
+}
