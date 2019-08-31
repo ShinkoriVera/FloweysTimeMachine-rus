@@ -1,0 +1,72 @@
+---
+permalink: /404.html
+---
+
+<html>
+
+    <style>
+        @font-face {
+            font-family: 'Determination';
+            src: url(res/10895.otf);
+        }
+
+        body {
+            background: #000;
+            font-family: 'Determination';
+            color: #fff;
+        }
+
+        .chr-img {
+            float: left;
+        }
+
+        .container {
+            width: 420px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        hr {
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        .gotohome {
+            text-align: center;
+        }
+
+        a {color: #fff;}
+        a:hover {color: #ff0;}
+        a:active {color: #ff0;}
+        a:after {color: #fff;}
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Ошибка!</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <meta name="description" content="Для этого правда нужно описание!?" />
+    </head>
+
+    <body>
+        <h1>Уупс! Кажется, не та страница</h1>
+        <div class="container">
+            <form>
+                <img src="res/flowey_side.png" alt="" id="floweyimg" class="chr-img" />
+                <p class="fmessage">* Куда это мы попали? <br>* Ты уверен, что это <strong>верная</strong> страница? <br>* Боже, это страница ошибки. <br>* Ну и как тебе ощущения совершённой ошибки?</p>
+            </form>
+            <hr width="500" color="#fff" />
+            <p class="gotohome">Вернуться в <a href="#">Машину времени</a>.</p>
+        </div>
+
+        <script>
+            setTimeout(function() {
+            document.getElementById("floweyimg").src = "res/flowey_sassy.png"
+        },10000);
+        </script>
+    </body>
+
+</html>
