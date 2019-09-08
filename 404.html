@@ -16,6 +16,11 @@ permalink: /404.html
             color: #fff;
         }
 
+        .fmessage {
+            font-family: 'Determination';
+            color: #fff;
+        }
+
         .chr-img {
             float: left;
         }
@@ -29,8 +34,8 @@ permalink: /404.html
             text-align: center;
         }
 
-        hr {
-            width: 500px;
+        .hr {
+            width: 400px;
             margin: 0 auto;
         }
 
@@ -42,6 +47,12 @@ permalink: /404.html
         a:hover {color: #ff0;}
         a:active {color: #ff0;}
         a:after {color: #fff;}
+
+        .oops {
+            color: #000;
+            text-align: center;
+        }
+        .oops:hover {color: #300;}
     </style>
 
     <head>
@@ -49,18 +60,44 @@ permalink: /404.html
         <title>Ошибка!</title>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <meta name="description" content="Для этого правда нужно описание!?" />
+        <script>
+            function fmessage() {
+                var b=[];
+                b[0]='<pre class="fmessage">* Где это мы?<br>* Это что, страница ошибки?<br>* Ну и ну.<br>* Надеюсь, ты специально её искал!</pre>';
+                b[1]='<pre class="fmessage">* Что?<br>* Куда это мы попали?<br>* Ах. Просто страница ошибки.<br>* Ну и как тебе ощущения того, что ошибся?</pre>';
+                b[2]='<pre class="fmessage">* Постой-ка... Здесь что-то не так?..<br>* Дай подумать...<br>* Понятно, просто страница ошибки.<br>* Глупо, не правда ли?</pre>';
+                b[3]='<pre class="fmessage">* Надо же...<br>* Ты попал на страницу ошибки!<br>* Интересно, как это могло произойти?<br>* Спроси себя =)</pre>';
+                b[4]='<pre class="fmessage">* Ай-яй-яй.<br>* Ты ничего не заметил? Правда ничего?<br>* Это страница ошибки.<br>* Не повторяй таких глупостей!</pre>';
+                b[5]='<pre class="fmessage">* Ага.<br>* Пытаешься найти что-то?<br>* Какие-нибудь секреты?<br>* Ну, зато ты нашёл страницу ошибки!</pre>';
+                b[6]='<pre class="fmessage">* Ты только посмотри!<br>* Вау. Это страница ошибки!<br>* Сделай скриншот, чтобы твои друзья считали тебя крутым!<br>* ... нет =)</pre>';
+                var i=Math.floor(Math.random()*b.length);
+                document.write( b[i] );
+            }
+        </script>
     </head>
 
     <body>
+        <div style="margin-bottom: 16vh"></div>
         <h1>Уупс! Кажется, не та страница</h1>
+        <div style="margin-bottom: 5vh"></div>
         <div class="container">
-            <form>
+            <div class="message-window">
                 <img src="res/flowey_side.png" alt="" id="floweyimg" class="chr-img" />
-                <p class="fmessage">* Куда это мы попали? <br>* Ты уверен, что это <strong>верная</strong> страница? <br>* Боже, это страница ошибки. <br>* Ну и как тебе ощущения совершённой ошибки?</p>
-            </form>
-            <hr width="500" color="#fff" />
+                <script>fmessage()</script>
+            </div>
+            <hr class="hr" width="10" color="#fff" align="center" />
             <p class="gotohome">Вернуться в <a href="#">Машину времени</a>.</p>
+            <div style="margin-bottom: 40vh"></div>
+            <p class="oops">ууупс<br>ye b xnj ns cj,bhfkcz nen edbltnm? xelfr&<br>botim rfrbt-nj ctrhtns pltcm? yt nfr kb&<br>ye gjghj,eq gjbcrfnm? tckb hbcry`im/</p>
         </div>
+
+<!-- 
+    botim rfrbt-kb,j ctrhtns pltcm& jxtym k.,jgsnysq&&
+    yt levfk j njv? xnj 'nj vj;tn ,snm ytvyjuj/// ytxtcnysv&
+    epyfnm dct ctrhtns cfvjve/// dskj;bnm d ctnm? xnj,s 'nj gthtcnfkj ,snm ctrhtnjv///
+    ye ye/ ybrfrjuj edf;tybz nt,t? genybr/
+    ghjdfkbdfq jnc.lf/ nt,t ybrj yt hfl pltcm/
+ -->
 
         <script>
             setTimeout(function() {
